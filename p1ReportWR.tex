@@ -30,7 +30,12 @@
 
 \usepackage{setspace}
 
+\usepackage{float}
 
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{xcolor}
 
 \begin{document}
 
@@ -79,7 +84,33 @@ $$ I = I_0 + md^2 $$
 where $d$ is the distance between the axes.
 
 \section{Apparatus}
+The measurement setup consists of a turntable with an integrated photo-gate
+system used for time measurements.
+\singlespacing
+\begin{itemize}
+\item sample
+\item turntable
+\item photo gate holder
+\item pulley
+\item string
+\item weight
+\item photo gate
+\item shielding pin
+\item cone pulley
+\item levelling bolt
+\item arm holder
+\end{itemize}
+\doublespacing
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=10cm]{fig/app/turntable}
+\end{figure}
+
+Since the bearings of the turntable are not frictionless, there will be a
+non-zero frictional torque $M_μ$ causing the turntable to decelerate with
+angular acceleration $\beta_1$, so that the second law of dynamics for
+rotational motion of the empty turntable reads $$   M_\mu = -I_1\beta_1  $$
 \section{Procedure}
 
 \section{Calculations and Results}
