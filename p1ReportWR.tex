@@ -104,7 +104,7 @@ system used for time measurements.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=10cm]{fig/app/turntable}
+\includegraphics[width=15cm]{fig/app/turntable}
 \end{figure}
 
 Since the bearings of the turntable are not frictionless, there will be a
@@ -145,6 +145,29 @@ rotational motion of the empty turntable reads $$   M_\mu = -I_1\beta_1  $$
 The timer’s resolution is $0.0001 s$, and the error is $0.004\%$. 
 
 \section{Calculations and Results}
+From the following equaitions,
+
+$$ \tau_z = I\beta_z $$
+$$ I_{ab} = I_A + I_B $$
+$$ M_\mu = -I_1\beta_1 $$
+$$ T = m(g-a)$$
+
+We can derive
+$$ m(g-R\beta_2)R-M_\mu=I_1\beta_2 $$
+Then we find
+$$ I_1=\frac{mR(g-R\beta_2)}{\beta_2-\beta_1} $$
+Similarly, if a rigid body with an unknown moment of inertia is placed on the
+turntable, we may find 
+$$ I_2=\frac{mR(g-R\beta_4)}{\beta_4-\beta_3} $$
+Using the fact that the moment of inertia is an additive quantity, the moment of
+inertia of the rigid object placed on the turntable, with respect to the axis of
+rotation, may be found as the difference 
+$$ I_3 = I_2 - I_1 $$
+
+\subsection{Measurement of Angular Acceleration}
+Angular acceleration can be derive by investigating the measurement data (k,t),
+the corresponding angular position is
+$$ \theta = k\pi = \omega_0 t + \frac{1}{2}\beta t^2 $$
 
 \section{Measurement Uncertianty Analysis}
 
