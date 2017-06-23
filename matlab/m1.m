@@ -26,4 +26,4 @@ t1h4 = [5.520 6.520];
 k = [1:8];
 kp = k * pi;
 
-plot(emptyTurntableD,kp);
+%plot(emptyTurntableD,kp);
