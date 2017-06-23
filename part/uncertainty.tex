@@ -47,7 +47,23 @@ The uncertainty of Timer is $\pm 0.0001s $ and $\pm 0.004\%$
 
 From the equation to calculate the moment of inertia,
 $$ I_1=\frac{mR(g-R\beta_2)}{\beta_2-\beta_1} $$
-$$ u_F = \sqrt{(\frac{\partial I}{\partial m})^2(u_m)^2 +   (\frac{\partial I}{\partial R})^2(u_R)^2+(\frac{\partial I}{\partial \beta_1 })^2(u_(\beta_1))^2+ (\frac{\partial I}{\partial \beta_2})^2(u_(\beta_2))^2   }$$
+$$ u_F = \sqrt{(\frac{\partial I}{\partial m})^2(u_m)^2 +   (\frac{\partial I}{\partial R})^2(u_R)^2+(\frac{\partial I}{\partial \beta_1 })^2(u_{\beta_1})^2+ (\frac{\partial I}{\partial \beta_2})^2(u_{\beta_2})^2   }$$
+
+$$\frac{\partial I}{\partial m} = \frac{R\left(g-\beta _2 R\right)}{\beta _2-\beta _1} $$
+$$\frac{\partial I}{\partial R} = -\frac{\beta _2 m R'\left(g-\beta _2 R\right)}{\beta _2-\beta _1} $$
+$$\frac{\partial I}{\partial \beta_1} = \frac{m R\left(g-\beta _2 R\right)}{\left(\beta _2-\beta _1\right){}^2} $$
+$$\frac{\partial I}{\partial \beta_2} = -\frac{m R R'\left(g-\beta _2 R\right)}{\beta _2-\beta _1}-\frac{m R\left(g-\beta _2 R\right)}{\left(\beta _2-\beta _1\right){}^2} $$
+
+
+$$ u_m = 0.1 g $$
+$$ u_R = 0.0075 cm $$
+$$ u_{\beta_1} = \sqrt{(0.0001 s)^2+(0.0001 \times 95 \% )^2} =0.000137931 $$
+$$ u_{\beta_1} = \sqrt{(0.0001 s)^2+(0.0001 \times 95 \% )^2} =0.000137931 $$
+
+Thus, 
+\begin{multline*}
+ u_F = ((-0.0401468 \times 0.050145)^2 \times (0.1)^2 \\   +  (0.0401468  \times 0.050145  )^2 \times (0.0075)^2  \\ + (0.824198 \times 0.050145)^2 \times   0.000137931^2  )^{\frac{1}{2}}  =  4.07887 \times 10^{-8}  
+\end{multline*}
 
 
 
