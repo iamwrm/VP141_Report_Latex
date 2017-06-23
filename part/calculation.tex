@@ -91,21 +91,40 @@ $$ g =  9.80665 m/s^2 $$
 
 
 For the Empty turntable,
+\newcommand{\EFWwr}{17cm}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\EFWwr]{matlab/etd}
+\end{figure}
+
+$$ \beta_1 = -0.0970 radius/s^2$$ (with 95\% confidence bounds) 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=13cm]{matlab/etd}
+\includegraphics[width=\EFWwr]{matlab/eta}
 \end{figure}
 
-$$ \beta_1 = -0.0970$$ (with 95\% confidence bounds) 
+$$ \beta_2 = 2.6580 radius/s^2$$ (with 95\% confidence bounds) 
+
+Thus,
+$$ I_1 = \frac{59.1 g \times 5.0145 cm \times (9.80665 m/s^2 - 5.0145 cm \times (-0.0970) radius/s^2 )}{2.6580 radius/s^2 -(-0.0970 radius/s^2) } = 0.0105 kg\times m^2 $$
+
+For turntable with disk 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\EFWwr]{matlab/wdd}
+\end{figure}
+
+$$ \beta_1 = -0.0668 radius/s^2$$ (with 95\% confidence bounds) 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=13cm]{matlab/eta}
+\includegraphics[width=\EFWwr]{matlab/wda}
 \end{figure}
 
-$$ \beta_2 = 2.6580$$ (with 95\% confidence bounds) 
+$$ \beta_2 = 1.2970 radius/s^2$$ (with 95\% confidence bounds) 
 
+$$ I_2 = \frac{59.1 g \times 5.0145 cm \times (9.80665 m/s^2 - 5.0145 cm \times (-0.0668) radius/s^2 )}{1.2970 radius/s^2 -(-0.0668 radius/s^2) } = 0.0213 kg\times m^2 $$
 
  
 
