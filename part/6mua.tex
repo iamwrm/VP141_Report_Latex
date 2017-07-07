@@ -44,7 +44,20 @@ $$   u_D = \sqrt{u_A^2+u_B^2} = \sqrt{0.0549^2+0.02^2} = 0.0584 mm $$
 $$   u_{D,r} = 0.0584 /  61.3533 =  0.095 \% $$ 
 
 \subsection{Uncertainty of The Mass of The Ball}
-$$   u_{m_0} = u_m /40 = 0.0001 / 40 / 1000 = 2.5 \cdot 10^-8 kg  $$
+We have $u_m $ for 40 balls, thus
+$$   u_{m_0} = u_m /40 = 0.0001 / 40 / 1000 = 2.5 \cdot 10^{-8} kg  $$
+
+\subsection{Uncertainty of The Density of One Ball}
+From
+$$   \rho_2 = \frac{6m_0}{ \pi d^3 } $$
+Then we can find that
+$$ u_{\rho_2} = \sqrt{(\frac{\partial \rho_2}{\partial m_0})^2(u_{m_0})^2 +
+  (\frac{\partial \rho_2}{\partial d})^2(u_d)^2 
+} = 96.70  $$ 
+$$   u_{\rho_2,r} = u_{\rho_2 } / \rho_2  =  96.70 / 8.385 \cdot 10^3 =   1.14 \% $$ 
+The code is included as matlab/cal1.m 
+
+
 
 
 
